@@ -337,3 +337,19 @@ void main() {
   paloma.caminar();
   paloma.volar();
 }
+final Fish_flygin pez = new Shark(nombre: 'Jose', sexo: 'Macho');
+  pez_volador.volar();
+  pez_volador.nadar();
+  pez_volador.come();
+  pez_volador.defeca();
+  pez_volador.muevete();
+  pez_volador.respira(); 
+
+
+
+  final Shark mordisko = new Shark(nombre: 'Jose', sexo: 'Macho');
+  mordisko.nadar();
+  mordisko.come();
+  mordisko.defeca();
+  mordisko.muevete();
+  mordisko.respira();
