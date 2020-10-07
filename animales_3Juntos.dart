@@ -242,6 +242,80 @@ class Dove extends Bird with Walk, Fly {
             periodo_gestacion: periodo_gestacion,
             longevidad: longevidad);
 }
+class Fish extends Animal {
+  //atributos
+  int aletas;
+
+  Fish(
+      {this.aletas,
+      String nombre,
+      String sexo,
+      String alimentacion,
+      String especie,
+      int peso,
+      int edad,
+      int numero_crias,
+      int periodo_gestacion,
+      int longevidad})
+      : super(
+            nombre: nombre,
+            sexo: sexo,
+            alimentacion: alimentacion,
+            especie: especie,
+            peso: peso,
+            edad: edad,
+            numero_crias: numero_crias,
+            periodo_gestacion: periodo_gestacion,
+            longevidad: longevidad);
+}
+class Shark extends Fish with Swim {
+  Shark(
+      {int aletas,
+      String nombre,
+      String sexo,
+      String alimentacion,
+      String especie,
+      int peso,
+      int edad,
+      int numero_crias,
+      int periodo_gestacion,
+      int longevidad})
+      : super(
+            aletas: aletas,
+            nombre: nombre,
+            sexo: sexo,
+            alimentacion: alimentacion,
+            especie: especie,
+            peso: peso,
+            edad: edad,
+            numero_crias: numero_crias,
+            periodo_gestacion: periodo_gestacion,
+            longevidad: longevidad);
+}
+class Flying_Fish extends Fish with Walk, Fly {
+  Flying_Fish(
+      {int aletas,
+      String nombre,
+      String sexo,
+      String alimentacion,
+      String especie,
+      int peso,
+      int edad,
+      int numero_crias,
+      int periodo_gestacion,
+      int longevidad})
+      : super(
+            aletas: aletas,
+            nombre: nombre,
+            sexo: sexo,
+            alimentacion: alimentacion,
+            especie: especie,
+            peso: peso,
+            edad: edad,
+            numero_crias: numero_crias,
+            periodo_gestacion: periodo_gestacion,
+            longevidad: longevidad);
+}
 
 void main() {
   //final Mammal elefante = Mammal();
